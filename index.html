@@ -46,7 +46,7 @@
       <div class="max-w-7xl mx-auto px-6 py-4">
         <div class="flex items-center justify-between">
           <a href="index.html" class="text-2xl font-bold text-blue-500">
-            Keric<span class="text-white">.</span>
+            <span class="symbol">&lt;</span>Ker<span class="symbol">/&gt;</span>
           </a>
 
           <button
@@ -101,58 +101,77 @@
           </ul>
         </div>
 
+        <!-- mobile menu -->
+         
+        <div
+          id="mobile-overlay"
+          class="fixed inset-0 z-[55]  backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300 md:hidden"
+        ></div>
+
         <div
           id="mobile-menu"
-          class="fixed top-0 right-0 h-full w-72 max-w-[85vw] translate-x-full bg-slate-950/95 backdrop-blur-xl border-l border-slate-800 p-6 pt-20 shadow-[0_0_40px_rgba(0,0,0,0.6)] transition-transform duration-300 md:hidden"
+          class="fixed top-0 right-0 z-[200] h-full w-72 max-w-[85vw] translate-x-full  backdrop-blur-2xl border-l border-slate-800/80 shadow-[0_0_80px_rgba(0,0,0,0.75)] rounded-l-3xl transition-transform duration-300 md:hidden"
         >
-          <button
-            id="close-menu"
-            class="absolute top-5 right-5 text-slate-300 hover:text-white"
-            aria-label="Fermer le menu"
-          >
-            <i class="bi bi-x-lg text-2xl"></i>
-          </button>
+          <div class="flex h-full flex-col p-6 pt-20 ">
+            <button
+              id="close-menu"
+              class="absolute top-5 right-5 text-slate-300 hover:text-white"
+              aria-label="Fermer le menu"
+            >
+              <i class="bi bi-x-lg text-2xl"></i>
+            </button>
 
-          <ul class="flex flex-col gap-4">
-            <li>
-              <a href="#home" class="mobile-nav-link block py-2 hover:text-blue-400 duration-300"
-                >Accueil</a
-              >
-            </li>
+            <ul class="flex flex-col gap-2 flex-1 bg-slate-950  p-5">
+              <li>
+                <a
+                  href="#home"
+                  class="mobile-nav-link block rounded-xl px-3 py-3 text-lg font-medium text-slate-200 hover:text-blue-400 hover:bg-slate-800/80 duration-300"
+                  >Accueil</a
+                >
+              </li>
 
-            <li>
-              <a href="#about" class="mobile-nav-link block py-2 hover:text-blue-400 duration-300"
-                >À propos</a
-              >
-            </li>
+              <li>
+                <a
+                  href="#about"
+                  class="mobile-nav-link block rounded-xl px-3 py-3 text-lg font-medium text-slate-200 hover:text-blue-400 hover:bg-slate-800/80 duration-300"
+                  >À propos</a
+                >
+              </li>
 
-            <li>
-              <a href="#projects" class="mobile-nav-link block py-2 hover:text-blue-400 duration-300"
-                >Projets</a
-              >
-            </li>
+              <li>
+                <a
+                  href="#projects"
+                  class="mobile-nav-link block rounded-xl px-3 py-3 text-lg font-medium text-slate-200 hover:text-blue-400 hover:bg-slate-800/80 duration-300"
+                  >Projets</a
+                >
+              </li>
 
-            <li>
-              <a href="#graphics" class="mobile-nav-link block py-2 hover:text-blue-400 duration-300"
-                >Graphisme</a
-              >
-            </li>
+              <li>
+                <a
+                  href="#graphics"
+                  class="mobile-nav-link block rounded-xl px-3 py-3 text-lg font-medium text-slate-200 hover:text-blue-400 hover:bg-slate-800/80 duration-300"
+                  >Graphisme</a
+                >
+              </li>
 
-            <li>
-              <a href="#contact" class="mobile-nav-link block py-2 hover:text-blue-400 duration-300"
-                >Contact</a
-              >
-            </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="mobile-nav-link block rounded-xl px-3 py-3 text-lg font-medium text-slate-200 hover:text-blue-400 hover:bg-slate-800/80 duration-300"
+                  >Contact</a
+                >
+              </li>
 
-            <li>
-              <a
-                href="assets/exo-scratch-7.pdf"
-                class="inline-flex items-center justify-center bg-blue-600 px-5 py-2 rounded-full hover:bg-blue-700 duration-300 mt-2"
-              >
-                Télécharger CV
-              </a>
-            </li>
-          </ul>
+              <li>
+                <a
+                  href="assets/exo-scratch-7.pdf"
+                  class="mt-3 inline-flex items-center justify-center rounded-full bg-blue-600 px-5 py-3 text-sm font-semibold text-white hover:bg-blue-700 duration-300"
+                >
+                  Télécharger CV
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -160,15 +179,21 @@
     <!-- HERO -->
 
     <section class="hero-bg min-h-screen flex items-center py-24 md:py-0">
-      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 md:gap-16 px-4 sm:px-6 lg:px-8">
+      <div
+        class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 md:gap-16 px-4 sm:px-6 lg:px-8"
+      >
         <!-- Texte -->
 
         <div class="flex flex-col justify-center">
           <p class="text-blue-400 font-semibold mb-4">Salut, je suis</p>
 
-          <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight">Keric M6</h1>
+          <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight">
+            KODOMMA Eric
+          </h1>
 
-          <h2 class="text-xl sm:text-2xl md:text-4xl font-semibold text-slate-300 mt-3">
+          <h2
+            class="text-xl sm:text-2xl md:text-4xl font-semibold text-slate-300 mt-3"
+          >
             Développeur Web PHP <br />
 
             <span class="text-blue-400">& Graphiste</span>
@@ -758,19 +783,33 @@
             <!-- Image -->
 
             <div class="overflow-hidden">
-              <div class="relative h-72 w-full bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 p-5 group-hover:scale-110 duration-700">
-                <div class="absolute inset-4 rounded-2xl border border-white/10 bg-slate-950/70 p-4">
+              <div
+                class="relative h-72 w-full bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 p-5 group-hover:scale-110 duration-700"
+              >
+                <div
+                  class="absolute inset-4 rounded-2xl border border-white/10 bg-slate-950/70 p-4"
+                >
                   <div class="flex items-center gap-2 mb-4">
                     <span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
                     <span class="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
                     <span class="w-2.5 h-2.5 rounded-full bg-green-400"></span>
                   </div>
-                  <div class="grid grid-cols-[1.2fr_0.8fr] gap-3 h-[calc(100%-2rem)]">
+                  <div
+                    class="grid grid-cols-[1.2fr_0.8fr] gap-3 h-[calc(100%-2rem)]"
+                  >
                     <div class="rounded-xl bg-slate-900 p-3">
-                      <div class="h-3 w-24 rounded-full bg-blue-500/70 mb-3"></div>
-                      <div class="h-2 w-full rounded-full bg-slate-700 mb-2"></div>
-                      <div class="h-2 w-5/6 rounded-full bg-slate-700 mb-2"></div>
-                      <div class="h-2 w-3/4 rounded-full bg-slate-700 mb-5"></div>
+                      <div
+                        class="h-3 w-24 rounded-full bg-blue-500/70 mb-3"
+                      ></div>
+                      <div
+                        class="h-2 w-full rounded-full bg-slate-700 mb-2"
+                      ></div>
+                      <div
+                        class="h-2 w-5/6 rounded-full bg-slate-700 mb-2"
+                      ></div>
+                      <div
+                        class="h-2 w-3/4 rounded-full bg-slate-700 mb-5"
+                      ></div>
                       <div class="grid grid-cols-2 gap-2">
                         <div class="h-12 rounded-lg bg-blue-600/40"></div>
                         <div class="h-12 rounded-lg bg-cyan-500/30"></div>
@@ -855,22 +894,34 @@
             class="group relative overflow-hidden rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 hover:border-cyan-400 transition duration-500"
           >
             <div class="overflow-hidden">
-              <div class="relative h-72 w-full bg-gradient-to-br from-cyan-950 via-slate-900 to-blue-950 p-5 group-hover:scale-110 duration-700">
-                <div class="absolute inset-4 rounded-2xl border border-white/10 bg-slate-950/70 p-4">
+              <div
+                class="relative h-72 w-full bg-gradient-to-br from-cyan-950 via-slate-900 to-blue-950 p-5 group-hover:scale-110 duration-700"
+              >
+                <div
+                  class="absolute inset-4 rounded-2xl border border-white/10 bg-slate-950/70 p-4"
+                >
                   <div class="flex items-center justify-between mb-4">
                     <div class="h-3 w-24 rounded-full bg-cyan-400"></div>
                     <div class="h-8 w-20 rounded-full bg-cyan-600/40"></div>
                   </div>
-                  <div class="grid grid-cols-[1.4fr_0.6fr] gap-3 h-[calc(100%-2rem)]">
+                  <div
+                    class="grid grid-cols-[1.4fr_0.6fr] gap-3 h-[calc(100%-2rem)]"
+                  >
                     <div class="rounded-xl bg-slate-900 p-3">
                       <div class="grid grid-cols-3 gap-2 mb-3">
                         <div class="h-12 rounded-lg bg-cyan-500/40"></div>
                         <div class="h-12 rounded-lg bg-blue-500/40"></div>
                         <div class="h-12 rounded-lg bg-indigo-500/40"></div>
                       </div>
-                      <div class="h-20 rounded-xl border border-cyan-500/20 bg-cyan-500/10 p-3">
-                        <div class="h-2 w-20 rounded-full bg-cyan-300 mb-2"></div>
-                        <div class="h-2 w-full rounded-full bg-slate-700 mb-2"></div>
+                      <div
+                        class="h-20 rounded-xl border border-cyan-500/20 bg-cyan-500/10 p-3"
+                      >
+                        <div
+                          class="h-2 w-20 rounded-full bg-cyan-300 mb-2"
+                        ></div>
+                        <div
+                          class="h-2 w-full rounded-full bg-slate-700 mb-2"
+                        ></div>
                         <div class="h-2 w-5/6 rounded-full bg-slate-700"></div>
                       </div>
                     </div>
@@ -959,8 +1010,12 @@
           <div
             class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-lg"
           >
-            <div class="h-96 w-full bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 p-5 group-hover:scale-110 duration-700">
-              <div class="h-full rounded-[1.5rem] border border-white/10 bg-slate-950/70 p-5 flex flex-col justify-between">
+            <div
+              class="h-96 w-full bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 p-5 group-hover:scale-110 duration-700"
+            >
+              <div
+                class="h-full rounded-[1.5rem] border border-white/10 bg-slate-950/70 p-5 flex flex-col justify-between"
+              >
                 <div class="flex items-center justify-between">
                   <div class="h-3 w-20 rounded-full bg-blue-500/70"></div>
                   <div class="h-8 w-8 rounded-full bg-cyan-500/30"></div>
@@ -968,7 +1023,9 @@
                 <div class="space-y-3">
                   <div class="h-3 w-32 rounded-full bg-slate-600"></div>
                   <div class="h-3 w-24 rounded-full bg-slate-700"></div>
-                  <div class="h-24 rounded-2xl border border-blue-500/20 bg-blue-500/10"></div>
+                  <div
+                    class="h-24 rounded-2xl border border-blue-500/20 bg-blue-500/10"
+                  ></div>
                 </div>
                 <div class="flex gap-2">
                   <div class="h-10 flex-1 rounded-xl bg-slate-800"></div>
@@ -980,9 +1037,13 @@
             <div
               class="absolute inset-0 bg-slate-950/70 opacity-0 group-hover:opacity-100 duration-500 flex flex-col justify-end p-8"
             >
-              <span class="text-blue-400 text-sm uppercase"> Illustration </span>
+              <span class="text-blue-400 text-sm uppercase">
+                Illustration
+              </span>
 
-              <h3 class="text-2xl font-bold text-white mt-2">Vacances Utiles</h3>
+              <h3 class="text-2xl font-bold text-white mt-2">
+                Vacances Utiles
+              </h3>
 
               <p class="text-slate-300 mt-3">UI • Branding • 2026</p>
             </div>
@@ -993,10 +1054,16 @@
           <div
             class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-lg"
           >
-            <div class="h-96 w-full bg-gradient-to-br from-slate-900 via-slate-800 to-purple-900 p-5 group-hover:scale-110 duration-700">
-              <div class="h-full rounded-[1.5rem] border border-white/10 bg-slate-950/70 p-5 flex flex-col justify-center gap-4">
+            <div
+              class="h-96 w-full bg-gradient-to-br from-slate-900 via-slate-800 to-purple-900 p-5 group-hover:scale-110 duration-700"
+            >
+              <div
+                class="h-full rounded-[1.5rem] border border-white/10 bg-slate-950/70 p-5 flex flex-col justify-center gap-4"
+              >
                 <div class="h-3 w-28 rounded-full bg-purple-500/70"></div>
-                <div class="h-16 rounded-2xl bg-purple-500/10 border border-purple-500/20"></div>
+                <div
+                  class="h-16 rounded-2xl bg-purple-500/10 border border-purple-500/20"
+                ></div>
                 <div class="grid grid-cols-2 gap-3">
                   <div class="h-20 rounded-2xl bg-slate-800"></div>
                   <div class="h-20 rounded-2xl bg-slate-800"></div>
@@ -1008,7 +1075,9 @@
             <div
               class="absolute inset-0 bg-slate-950/70 opacity-0 group-hover:opacity-100 duration-500 flex flex-col justify-end p-8"
             >
-              <span class="text-purple-400 text-sm uppercase"> Illustration </span>
+              <span class="text-purple-400 text-sm uppercase">
+                Illustration
+              </span>
 
               <h3 class="text-2xl font-bold text-white mt-2">Formation Web</h3>
 
@@ -1021,11 +1090,17 @@
           <div
             class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-lg"
           >
-            <div class="h-96 w-full bg-gradient-to-br from-slate-900 via-slate-800 to-cyan-900 p-5 group-hover:scale-110 duration-700">
-              <div class="h-full rounded-[1.5rem] border border-white/10 bg-slate-950/70 p-5 flex flex-col justify-between">
+            <div
+              class="h-96 w-full bg-gradient-to-br from-slate-900 via-slate-800 to-cyan-900 p-5 group-hover:scale-110 duration-700"
+            >
+              <div
+                class="h-full rounded-[1.5rem] border border-white/10 bg-slate-950/70 p-5 flex flex-col justify-between"
+              >
                 <div class="h-3 w-20 rounded-full bg-cyan-500/70"></div>
                 <div class="grid gap-3">
-                  <div class="h-14 rounded-2xl bg-cyan-500/15 border border-cyan-500/20"></div>
+                  <div
+                    class="h-14 rounded-2xl bg-cyan-500/15 border border-cyan-500/20"
+                  ></div>
                   <div class="h-20 rounded-2xl bg-slate-800"></div>
                 </div>
                 <div class="flex items-end justify-between">
@@ -1038,7 +1113,9 @@
             <div
               class="absolute inset-0 bg-slate-950/70 opacity-0 group-hover:opacity-100 duration-500 flex flex-col justify-end p-8"
             >
-              <span class="text-cyan-400 text-sm uppercase"> Illustration </span>
+              <span class="text-cyan-400 text-sm uppercase">
+                Illustration
+              </span>
 
               <h3 class="text-2xl font-bold text-white mt-2">Promotion</h3>
 
@@ -1051,19 +1128,29 @@
           <div
             class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-lg"
           >
-            <div class="h-96 w-full bg-gradient-to-br from-slate-900 via-slate-800 to-amber-900 p-5 group-hover:scale-110 duration-700">
-              <div class="h-full rounded-[1.5rem] border border-white/10 bg-slate-950/70 p-5 flex flex-col justify-between">
+            <div
+              class="h-96 w-full bg-gradient-to-br from-slate-900 via-slate-800 to-amber-900 p-5 group-hover:scale-110 duration-700"
+            >
+              <div
+                class="h-full rounded-[1.5rem] border border-white/10 bg-slate-950/70 p-5 flex flex-col justify-between"
+              >
                 <div class="flex items-center justify-between">
                   <div class="h-3 w-20 rounded-full bg-amber-500/70"></div>
                   <div class="h-8 w-8 rounded-full bg-pink-500/30"></div>
                 </div>
                 <div class="flex-1 flex items-center justify-center">
-                  <div class="w-full max-w-[260px] rounded-[2rem] border border-amber-500/20 bg-gradient-to-br from-amber-500/15 via-slate-900 to-rose-500/10 p-4">
-                    <div class="h-24 rounded-[1.25rem] bg-gradient-to-r from-amber-400/40 to-rose-500/30 mb-3"></div>
+                  <div
+                    class="w-full max-w-[260px] rounded-[2rem] border border-amber-500/20 bg-gradient-to-br from-amber-500/15 via-slate-900 to-rose-500/10 p-4"
+                  >
+                    <div
+                      class="h-24 rounded-[1.25rem] bg-gradient-to-r from-amber-400/40 to-rose-500/30 mb-3"
+                    ></div>
                     <div class="h-3 w-20 rounded-full bg-slate-600 mb-2"></div>
                     <div class="grid grid-cols-2 gap-3">
                       <div class="h-16 rounded-2xl bg-slate-800"></div>
-                      <div class="h-16 rounded-2xl border border-amber-500/20 bg-amber-500/10"></div>
+                      <div
+                        class="h-16 rounded-2xl border border-amber-500/20 bg-amber-500/10"
+                      ></div>
                     </div>
                   </div>
                 </div>
@@ -1077,7 +1164,9 @@
             <div
               class="absolute inset-0 bg-slate-950/70 opacity-0 group-hover:opacity-100 duration-500 flex flex-col justify-end p-8"
             >
-              <span class="text-amber-400 text-sm uppercase"> Illustration </span>
+              <span class="text-amber-400 text-sm uppercase">
+                Illustration
+              </span>
 
               <h3 class="text-2xl font-bold text-white mt-2">Louange</h3>
 
@@ -1102,7 +1191,9 @@
             Mon Projet Principal
           </span>
 
-          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-4">
+          <h2
+            class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-4"
+          >
             Système de Gestion d'École
           </h2>
 
@@ -1123,9 +1214,15 @@
               class="absolute inset-0 bg-blue-600 blur-[120px] opacity-20 rounded-full"
             ></div>
 
-            <div class="relative w-full rounded-3xl border border-white/10 shadow-2xl overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-blue-950 p-4">
-              <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(59,130,246,0.25),_transparent_40%)]"></div>
-              <div class="relative rounded-2xl border border-white/10 bg-slate-950/80 p-4">
+            <div
+              class="relative w-full rounded-3xl border border-white/10 shadow-2xl overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-blue-950 p-4"
+            >
+              <div
+                class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(59,130,246,0.25),_transparent_40%)]"
+              ></div>
+              <div
+                class="relative rounded-2xl border border-white/10 bg-slate-950/80 p-4"
+              >
                 <div class="flex items-center gap-2 mb-4">
                   <span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
                   <span class="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
@@ -1133,30 +1230,50 @@
                 </div>
 
                 <div class="grid gap-3 md:grid-cols-[1.2fr_0.8fr]">
-                  <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4">
-                    <div class="h-3 w-24 rounded-full bg-blue-500/70 mb-3"></div>
+                  <div
+                    class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4"
+                  >
+                    <div
+                      class="h-3 w-24 rounded-full bg-blue-500/70 mb-3"
+                    ></div>
                     <div class="grid grid-cols-2 gap-3 mb-3">
                       <div class="h-16 rounded-xl bg-blue-600/30"></div>
                       <div class="h-16 rounded-xl bg-cyan-500/20"></div>
                     </div>
-                    <div class="h-20 rounded-xl border border-cyan-500/20 bg-cyan-500/10 p-3">
+                    <div
+                      class="h-20 rounded-xl border border-cyan-500/20 bg-cyan-500/10 p-3"
+                    >
                       <div class="h-2 w-20 rounded-full bg-cyan-300 mb-2"></div>
-                      <div class="h-2 w-full rounded-full bg-slate-700 mb-2"></div>
+                      <div
+                        class="h-2 w-full rounded-full bg-slate-700 mb-2"
+                      ></div>
                       <div class="h-2 w-5/6 rounded-full bg-slate-700"></div>
                     </div>
                   </div>
 
                   <div class="space-y-3">
-                    <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-3">
-                      <div class="h-2 w-16 rounded-full bg-slate-600 mb-2"></div>
+                    <div
+                      class="rounded-2xl border border-slate-800 bg-slate-900/70 p-3"
+                    >
+                      <div
+                        class="h-2 w-16 rounded-full bg-slate-600 mb-2"
+                      ></div>
                       <div class="h-10 rounded-lg bg-slate-800"></div>
                     </div>
-                    <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-3">
-                      <div class="h-2 w-20 rounded-full bg-slate-600 mb-2"></div>
+                    <div
+                      class="rounded-2xl border border-slate-800 bg-slate-900/70 p-3"
+                    >
+                      <div
+                        class="h-2 w-20 rounded-full bg-slate-600 mb-2"
+                      ></div>
                       <div class="h-10 rounded-lg bg-blue-600/25"></div>
                     </div>
-                    <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-3">
-                      <div class="h-2 w-24 rounded-full bg-slate-600 mb-2"></div>
+                    <div
+                      class="rounded-2xl border border-slate-800 bg-slate-900/70 p-3"
+                    >
+                      <div
+                        class="h-2 w-24 rounded-full bg-slate-600 mb-2"
+                      ></div>
                       <div class="h-10 rounded-lg bg-cyan-500/20"></div>
                     </div>
                   </div>
@@ -1178,7 +1295,9 @@
               Projet en développement
             </span>
 
-            <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mt-6">
+            <h3
+              class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mt-6"
+            >
               Une plateforme complète pour les établissements scolaires
             </h3>
 
@@ -1341,7 +1460,10 @@
 
       <!--==================== CONTACT ====================-->
 
-      <section id="contact" class="py-20 sm:py-28 bg-slate-900 relative overflow-hidden">
+      <section
+        id="contact"
+        class="py-20 sm:py-28 bg-slate-900 relative overflow-hidden"
+      >
         <!-- Lumières d'arrière-plan -->
 
         <div
@@ -1360,7 +1482,9 @@
               Contact
             </span>
 
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-4">
+            <h2
+              class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-4"
+            >
               Travaillons Ensemble
             </h2>
 
@@ -1664,30 +1788,57 @@
     </footer>
 
     <script>
-      const menuToggle = document.getElementById('menu-toggle');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const closeMenu = document.getElementById('close-menu');
-      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const mobileOverlay = document.getElementById("mobile-overlay");
+      const closeMenu = document.getElementById("close-menu");
+      const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
+
+      const setMenuState = (isOpen) => {
+        document.body.classList.toggle("overflow-hidden", isOpen);
+
+        mobileMenu.classList.toggle("translate-x-0", isOpen);
+        mobileMenu.classList.toggle("translate-x-full", !isOpen);
+
+        if (mobileOverlay) {
+          mobileOverlay.classList.toggle("opacity-0", !isOpen);
+          mobileOverlay.classList.toggle("pointer-events-none", !isOpen);
+          mobileOverlay.classList.toggle("opacity-100", isOpen);
+          mobileOverlay.classList.toggle("pointer-events-auto", isOpen);
+        }
+
+        if (menuToggle) {
+          menuToggle.setAttribute("aria-expanded", String(isOpen));
+          menuToggle.setAttribute(
+            "aria-label",
+            isOpen ? "Fermer le menu" : "Ouvrir le menu",
+          );
+        }
+      };
 
       if (menuToggle && mobileMenu) {
-        menuToggle.addEventListener('click', () => {
-          mobileMenu.classList.remove('translate-x-full');
-          mobileMenu.classList.add('translate-x-0');
+        menuToggle.addEventListener("click", () => {
+          const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+          setMenuState(!isOpen);
         });
       }
 
       if (closeMenu && mobileMenu) {
-        closeMenu.addEventListener('click', () => {
-          mobileMenu.classList.remove('translate-x-0');
-          mobileMenu.classList.add('translate-x-full');
-        });
+        closeMenu.addEventListener("click", () => setMenuState(false));
+      }
+
+      if (mobileOverlay) {
+        mobileOverlay.addEventListener("click", () => setMenuState(false));
       }
 
       mobileNavLinks.forEach((link) => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.remove('translate-x-0');
-          mobileMenu.classList.add('translate-x-full');
-        });
+        link.addEventListener("click", () => setMenuState(false));
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          setMenuState(false);
+        }
       });
     </script>
   </body>
