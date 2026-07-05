@@ -1,0 +1,1694 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keric | Développeur Web & Graphiste</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fichier CSS -->
+    <link rel="stylesheet" href="assets/css/index.css" />
+
+    <!-- Devicons -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+
+  <body class="bg-slate-950 text-white" id="home">
+    <!-- NAVBAR -->
+
+    <nav
+      class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur border-b border-slate-800"
+    >
+      <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <a href="index.html" class="text-2xl font-bold text-blue-500">
+            Keric<span class="text-white">.</span>
+          </a>
+
+          <button
+            id="menu-toggle"
+            class="md:hidden flex flex-col gap-1.5 p-2 rounded-lg border border-slate-700 bg-slate-900/80"
+            aria-label="Ouvrir le menu"
+          >
+            <span class="w-6 h-0.5 bg-white"></span>
+            <span class="w-6 h-0.5 bg-white"></span>
+            <span class="w-6 h-0.5 bg-white"></span>
+          </button>
+
+          <ul class="hidden md:flex gap-8 items-center">
+            <li>
+              <a href="#home" class="hover:text-blue-400 duration-300"
+                >Accueil</a
+              >
+            </li>
+
+            <li>
+              <a href="#about" class="hover:text-blue-400 duration-300"
+                >À propos</a
+              >
+            </li>
+
+            <li>
+              <a href="#projects" class="hover:text-blue-400 duration-300"
+                >Projets</a
+              >
+            </li>
+
+            <li>
+              <a href="#graphics" class="hover:text-blue-400 duration-300"
+                >Graphisme</a
+              >
+            </li>
+
+            <li>
+              <a href="#contact" class="hover:text-blue-400 duration-300"
+                >Contact</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="assets/CV.pdf"
+                class="inline-flex items-center justify-center bg-blue-600 px-5 py-2 rounded-full hover:bg-blue-700 duration-300"
+              >
+                Télécharger CV
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          id="mobile-menu"
+          class="fixed top-0 right-0 h-full w-72 max-w-[85vw] translate-x-full bg-slate-950/95 backdrop-blur-xl border-l border-slate-800 p-6 pt-20 shadow-[0_0_40px_rgba(0,0,0,0.6)] transition-transform duration-300 md:hidden"
+        >
+          <button
+            id="close-menu"
+            class="absolute top-5 right-5 text-slate-300 hover:text-white"
+            aria-label="Fermer le menu"
+          >
+            <i class="bi bi-x-lg text-2xl"></i>
+          </button>
+
+          <ul class="flex flex-col gap-4">
+            <li>
+              <a href="#home" class="mobile-nav-link block py-2 hover:text-blue-400 duration-300"
+                >Accueil</a
+              >
+            </li>
+
+            <li>
+              <a href="#about" class="mobile-nav-link block py-2 hover:text-blue-400 duration-300"
+                >À propos</a
+              >
+            </li>
+
+            <li>
+              <a href="#projects" class="mobile-nav-link block py-2 hover:text-blue-400 duration-300"
+                >Projets</a
+              >
+            </li>
+
+            <li>
+              <a href="#graphics" class="mobile-nav-link block py-2 hover:text-blue-400 duration-300"
+                >Graphisme</a
+              >
+            </li>
+
+            <li>
+              <a href="#contact" class="mobile-nav-link block py-2 hover:text-blue-400 duration-300"
+                >Contact</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="assets/exo-scratch-7.pdf"
+                class="inline-flex items-center justify-center bg-blue-600 px-5 py-2 rounded-full hover:bg-blue-700 duration-300 mt-2"
+              >
+                Télécharger CV
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="hero-bg min-h-screen flex items-center py-24 md:py-0">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 md:gap-16 px-4 sm:px-6 lg:px-8">
+        <!-- Texte -->
+
+        <div class="flex flex-col justify-center">
+          <p class="text-blue-400 font-semibold mb-4">Salut, je suis</p>
+
+          <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight">Keric M6</h1>
+
+          <h2 class="text-xl sm:text-2xl md:text-4xl font-semibold text-slate-300 mt-3">
+            Développeur Web PHP <br />
+
+            <span class="text-blue-400">& Graphiste</span>
+          </h2>
+
+          <p class="mt-8 text-slate-400 leading-8">
+            Je suis un développeur web junior passionné, en constante évolution,
+            avec un intérêt particulier pour le développement d'applications PHP
+            et la création de supports graphiques. Je m'investis dans chaque
+            projet afin de produire un travail propre, moderne et évolutif.
+          </p>
+
+          <div class="flex flex-wrap gap-5 mt-10">
+            <a href="#projects" class="gradient px-8 py-4 rounded-full">
+              Voir mes projets
+            </a>
+
+            <a
+              href="#contact"
+              class="border border-blue-500 px-8 py-4 rounded-full hover:bg-blue-600 duration-300"
+            >
+              Me contacter
+            </a>
+          </div>
+
+          <div class="flex gap-4 mt-10 text-xl">
+            <a
+              href="#"
+              class="social-link flex items-center justify-center w-12 h-12 rounded-full border border-slate-700 hover:text-blue-400 duration-300"
+            >
+              <i class="bi bi-github"></i>
+            </a>
+
+            <a
+              href="#"
+              class="social-link flex items-center justify-center w-12 h-12 rounded-full border border-slate-700 hover:text-blue-400 duration-300"
+            >
+              <i class="bi bi-linkedin"></i>
+            </a>
+
+            <a
+              href="#"
+              class="social-link flex items-center justify-center w-12 h-12 rounded-full border border-slate-700 hover:text-blue-400 duration-300"
+            >
+              <i class="bi bi-facebook"></i>
+            </a>
+
+            <a
+              href="#"
+              class="social-link flex items-center justify-center w-12 h-12 rounded-full border border-slate-700 hover:text-blue-400 duration-300"
+            >
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- IMAGE -->
+
+        <div class="flex justify-center items-center">
+          <div class="relative">
+            <div
+              class="absolute inset-0 blur-3xl bg-blue-600 opacity-40 rounded-full"
+            ></div>
+
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80"
+              alt="Portrait moderne de développeur"
+              class="relative w-full max-w-[280px] sm:max-w-[340px] md:max-w-[380px] lg:max-w-[420px] rounded-[2rem] border border-white/10 shadow-2xl object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PETITE SECTION -->
+
+    <section class="bg-slate-900 py-16 sm:py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid gap-6 md:grid-cols-3">
+          <div class="bg-slate-800 p-8 border border-slate-700">
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 rounded-none bg-blue-500/10 border border-blue-500/20"
+            >
+              <i class="bi bi-code-slash text-3xl text-blue-500"></i>
+            </div>
+
+            <h3 class="text-2xl font-semibold mt-5">Développement Web</h3>
+
+            <p class="text-slate-400 mt-3">
+              Applications PHP, tableaux de bord, formulaires sécurisés, gestion
+              de bases de données MySQL.
+            </p>
+          </div>
+
+          <div class="bg-slate-800 p-8 border border-slate-700">
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 rounded-none bg-blue-500/10 border border-blue-500/20"
+            >
+              <i class="bi bi-palette text-3xl text-blue-500"></i>
+            </div>
+
+            <h3 class="text-2xl font-semibold mt-5">Design Graphique</h3>
+
+            <p class="text-slate-400 mt-3">
+              Création d'affiches, flyers, visuels promotionnels et contenus
+              destinés aux réseaux sociaux.
+            </p>
+          </div>
+
+          <div class="bg-slate-800 p-8 border border-slate-700">
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 rounded-none bg-blue-500/10 border border-blue-500/20"
+            >
+              <i class="bi bi-rocket-takeoff text-3xl text-blue-500"></i>
+            </div>
+
+            <h3 class="text-2xl font-semibold mt-5">Apprentissage Continu</h3>
+
+            <p class="text-slate-400 mt-3">
+              Je perfectionne constamment mes compétences en développement web
+              afin de créer des applications toujours plus performantes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+
+    <!-- ABOUT -->
+
+    <section id="about" class="bg-slate-950 py-20 sm:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <!-- Titre -->
+
+        <div class="text-center mb-20">
+          <p class="text-blue-500 uppercase tracking-[6px] font-semibold">
+            À propos
+          </p>
+
+          <h2 class="text-4xl md:text-5xl font-bold mt-4 text-white">
+            Qui suis-je ?
+          </h2>
+
+          <div class="w-24 h-1 bg-blue-500 mx-auto mt-6 rounded-full"></div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <!-- Photo -->
+
+          <div class="flex justify-center">
+            <div class="relative">
+              <div
+                class="absolute -inset-4 rounded-3xl bg-blue-600 blur-3xl opacity-20"
+              ></div>
+
+              <img
+                src="assets/images/eric_5980.jpg"
+                alt="Photo de Keric"
+                class="relative rounded-3xl w-full max-w-[320px] sm:max-w-[380px] md:max-w-[420px] shadow-2xl border border-white/10"
+              />
+            </div>
+          </div>
+
+          <!-- Texte -->
+
+          <div>
+            <h3 class="text-2xl sm:text-3xl font-bold text-white mb-6">
+              Développeur Web Junior & Graphiste
+            </h3>
+
+            <p class="text-slate-400 leading-8 mb-6">
+              Passionné par les technologies du web, je développe
+              progressivement des applications modernes en utilisant
+              <span class="text-blue-400">PHP</span>,
+              <span class="text-blue-400">Laravel</span>,
+              <span class="text-blue-400">MySQL</span>,
+              <span class="text-blue-400">Tailwind CSS</span> et
+              <span class="text-blue-400">JavaScript</span>.
+            </p>
+
+            <p class="text-slate-400 leading-8 mb-8">
+              En parallèle, je réalise des supports graphiques tels que des
+              affiches, flyers et visuels destinés aux entreprises, associations
+              et événements. Mon objectif est de concevoir des solutions à la
+              fois esthétiques, performantes et utiles.
+            </p>
+
+            <!-- Informations -->
+
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div class="bg-slate-900 p-5 rounded-xl border border-slate-800">
+                <h4 class="text-blue-400 font-semibold mb-2">Nom</h4>
+
+                <p class="text-slate-300">KODOMMA Eric</p>
+              </div>
+
+              <div class="bg-slate-900 p-5 rounded-xl border border-slate-800">
+                <h4 class="text-blue-400 font-semibold mb-2">Expérience</h4>
+
+                <p class="text-slate-300">Développeur en progression</p>
+              </div>
+
+              <div class="bg-slate-900 p-5 rounded-xl border border-slate-800">
+                <h4 class="text-blue-400 font-semibold mb-2">Technologies</h4>
+
+                <p class="text-slate-300">
+                  PHP • Laravel • MySQL • Tailwind • JavaScript
+                </p>
+              </div>
+
+              <div class="bg-slate-900 p-5 rounded-xl border border-slate-800">
+                <h4 class="text-blue-400 font-semibold mb-2">Disponibilité</h4>
+
+                <p class="text-green-400 font-medium">
+                  Disponible pour des projets
+                </p>
+              </div>
+            </div>
+
+            <!-- Boutons -->
+
+            <div class="flex flex-wrap gap-5 mt-10">
+              <a
+                href="#projects"
+                class="bg-blue-600 hover:bg-blue-700 duration-300 px-7 py-3 rounded-full"
+              >
+                Voir mes projets
+              </a>
+
+              <a
+                href="#contact"
+                class="border border-blue-500 hover:bg-blue-600 duration-300 px-7 py-3 rounded-full"
+              >
+                Me contacter
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills -->
+
+    <!--==================== SKILLS ====================-->
+
+    <section id="skills" class="py-20 sm:py-24 bg-slate-950">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <!-- Titre -->
+
+        <div class="text-center mb-16">
+          <span class="text-blue-500 uppercase tracking-[5px] font-semibold">
+            MES COMPÉTENCES
+          </span>
+
+          <h2 class="text-4xl md:text-5xl font-bold text-white mt-4">
+            Les technologies que j'utilise
+          </h2>
+
+          <p class="text-slate-400 mt-6 max-w-2xl mx-auto">
+            J'améliore continuellement mes compétences afin de développer des
+            applications modernes, sécurisées et performantes.
+          </p>
+        </div>
+
+        <!-- Cartes -->
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- HTML -->
+
+          <div
+            class="bg-slate-900 rounded-2xl p-6 hover:-translate-y-2 transition duration-300 shadow-lg"
+          >
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-4">
+                <i class="devicon-html5-plain colored text-5xl"></i>
+
+                <div>
+                  <h3 class="text-white text-xl font-semibold">HTML5</h3>
+
+                  <p class="text-slate-400 text-sm">Structure des pages web</p>
+                </div>
+              </div>
+
+              <span class="text-blue-500 font-bold"> 100% </span>
+            </div>
+
+            <div class="mt-5 w-full h-2 bg-slate-700 rounded-full">
+              <div class="w-[100%] h-2 bg-blue-500 rounded-full"></div>
+            </div>
+          </div>
+
+          <!-- CSS -->
+
+          <div
+            class="bg-slate-900 rounded-2xl p-6 hover:-translate-y-2 transition duration-300 shadow-lg"
+          >
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-4">
+                <i class="devicon-css3-plain colored text-5xl"></i>
+
+                <div>
+                  <h3 class="text-white text-xl font-semibold">CSS3</h3>
+
+                  <p class="text-slate-400 text-sm">Mise en forme moderne</p>
+                </div>
+              </div>
+
+              <span class="text-blue-500 font-bold"> 85% </span>
+            </div>
+
+            <div class="mt-5 h-2 bg-slate-700 rounded-full">
+              <div class="w-[85%] h-2 bg-blue-500 rounded-full"></div>
+            </div>
+          </div>
+
+          <!-- Tailwind -->
+
+          <div
+            class="bg-slate-900 rounded-2xl p-6 hover:-translate-y-2 transition duration-300 shadow-lg"
+          >
+            <div class="flex items-center gap-4">
+              <i class="devicon-tailwindcss-original colored text-5xl"></i>
+
+              <div class="flex-1">
+                <div class="flex justify-between">
+                  <h3 class="text-white text-xl font-semibold">Tailwind CSS</h3>
+
+                  <span class="text-blue-500 font-bold"> 90% </span>
+                </div>
+
+                <p class="text-slate-400 text-sm">Framework CSS</p>
+              </div>
+            </div>
+
+            <div class="mt-5 h-2 bg-slate-700 rounded-full">
+              <div class="w-[90%] h-2 bg-blue-500 rounded-full"></div>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+
+          <div
+            class="bg-slate-900 rounded-2xl p-6 hover:-translate-y-2 transition duration-300 shadow-lg"
+          >
+            <div class="flex items-center gap-4">
+              <i class="devicon-javascript-plain colored text-5xl"></i>
+
+              <div class="flex-1">
+                <div class="flex justify-between">
+                  <h3 class="text-white text-xl font-semibold">JavaScript</h3>
+
+                  <span class="text-blue-500 font-bold"> 40% </span>
+                </div>
+
+                <p class="text-slate-400 text-sm">Interactivité</p>
+              </div>
+            </div>
+
+            <div class="mt-5 h-2 bg-slate-700 rounded-full">
+              <div class="w-[40%] h-2 bg-blue-500 rounded-full"></div>
+            </div>
+          </div>
+
+          <!-- PHP -->
+
+          <div
+            class="bg-slate-900 rounded-2xl p-6 hover:-translate-y-2 transition duration-300 shadow-lg"
+          >
+            <div class="flex items-center gap-4">
+              <i class="devicon-php-plain colored text-5xl"></i>
+
+              <div class="flex-1">
+                <div class="flex justify-between">
+                  <h3 class="text-white text-xl font-semibold">PHP</h3>
+
+                  <span class="text-blue-500 font-bold"> 75% </span>
+                </div>
+
+                <p class="text-slate-400 text-sm">Développement Backend</p>
+              </div>
+            </div>
+
+            <div class="mt-5 h-2 bg-slate-700 rounded-full">
+              <div class="w-[75%] h-2 bg-blue-500 rounded-full"></div>
+            </div>
+          </div>
+
+          <!-- Laravel -->
+
+          <div
+            class="bg-slate-900/90 rounded-2xl p-6 hover:-translate-y-2 transition duration-300 shadow-[0_10px_30px_rgba(2,8,23,0.25)] border border-blue-500/10"
+          >
+            <div class="flex items-center gap-4">
+              <i class="devicon-laravel-plain colored text-5xl"></i>
+
+              <div class="flex-1">
+                <div class="flex justify-between gap-3">
+                  <h3 class="text-white text-xl font-semibold">Laravel</h3>
+
+                  <span class="text-blue-500 font-bold"> 15% </span>
+                </div>
+
+                <p class="text-slate-400 text-sm">
+                  Framework PHP pour applications modernes
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-5 h-2 bg-slate-700 rounded-full">
+              <div class="w-[15%] h-2 bg-blue-500 rounded-full"></div>
+            </div>
+          </div>
+          <!-- MySQL -->
+
+          <div
+            class="bg-slate-900 rounded-2xl p-6 hover:-translate-y-2 transition duration-300 shadow-lg"
+          >
+            <div class="flex items-center gap-4">
+              <i class="devicon-mysql-original colored text-5xl"></i>
+
+              <div class="flex-1">
+                <div class="flex justify-between">
+                  <h3 class="text-white text-xl font-semibold">MySQL</h3>
+
+                  <span class="text-blue-500 font-bold"> 70% </span>
+                </div>
+
+                <p class="text-slate-400 text-sm">
+                  Gestion de bases de données
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-5 h-2 bg-slate-700 rounded-full">
+              <div class="w-[70%] h-2 bg-blue-500 rounded-full"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+
+    <!--==================== SERVICES ====================-->
+
+    <!-- ===================== SERVICES ===================== -->
+
+    <section id="services" class="py-20 sm:py-24 bg-slate-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <!-- Titre -->
+
+        <div class="text-center mb-16">
+          <span class="uppercase tracking-[5px] text-blue-500 font-semibold">
+            Mes Services
+          </span>
+
+          <h2 class="text-4xl md:text-5xl font-bold text-white mt-4">
+            Ce que je peux réaliser
+          </h2>
+
+          <p class="text-slate-400 mt-5 max-w-2xl mx-auto">
+            Je conçois des solutions web modernes ainsi que des supports
+            graphiques adaptés aux besoins des particuliers, entreprises et
+            associations.
+          </p>
+        </div>
+
+        <!-- Cartes -->
+
+        <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
+          <!-- Service 1 -->
+
+          <div
+            class="group bg-slate-950 rounded-2xl p-8 border border-slate-800 hover:border-blue-500 hover:-translate-y-3 transition duration-300"
+          >
+            <div
+              class="w-16 h-16 rounded-xl bg-blue-600 flex items-center justify-center text-3xl mb-6"
+            >
+              💻
+            </div>
+
+            <h3 class="text-2xl font-semibold text-white mb-4">
+              Développement Web
+            </h3>
+
+            <p class="text-slate-400 leading-7">
+              Création de sites web modernes, rapides et responsives avec HTML,
+              Tailwind CSS, JavaScript et PHP.
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+
+          <div
+            class="group bg-slate-950 rounded-2xl p-8 border border-slate-800 hover:border-blue-500 hover:-translate-y-3 transition duration-300"
+          >
+            <div
+              class="w-16 h-16 rounded-xl bg-blue-600 flex items-center justify-center text-3xl mb-6"
+            >
+              🗄️
+            </div>
+
+            <h3 class="text-2xl font-semibold text-white mb-4">
+              Applications PHP
+            </h3>
+
+            <p class="text-slate-400 leading-7">
+              Développement de tableaux de bord, systèmes de gestion,
+              authentification et bases de données MySQL.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+
+          <div
+            class="group bg-slate-950 rounded-2xl p-8 border border-slate-800 hover:border-blue-500 hover:-translate-y-3 transition duration-300"
+          >
+            <div
+              class="w-16 h-16 rounded-xl bg-blue-600 flex items-center justify-center text-3xl mb-6"
+            >
+              🎨
+            </div>
+
+            <h3 class="text-2xl font-semibold text-white mb-4">
+              Design Graphique
+            </h3>
+
+            <p class="text-slate-400 leading-7">
+              Réalisation d'affiches, flyers, publications pour les réseaux
+              sociaux et autres supports de communication.
+            </p>
+          </div>
+
+          <!-- Service 4 -->
+
+          <div
+            class="group bg-slate-950 rounded-2xl p-8 border border-slate-800 hover:border-blue-500 hover:-translate-y-3 transition duration-300"
+          >
+            <div
+              class="w-16 h-16 rounded-xl bg-blue-600 flex items-center justify-center text-3xl mb-6"
+            >
+              🚀
+            </div>
+
+            <h3 class="text-2xl font-semibold text-white mb-4">Maintenance</h3>
+
+            <p class="text-slate-400 leading-7">
+              Correction de bugs, amélioration d'interfaces, optimisation des
+              performances et ajout de nouvelles fonctionnalités.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- projets -->
+
+    <!--==================== PROJECTS ====================-->
+
+    <section id="projects" class="py-20 sm:py-28 bg-slate-950 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <!-- Titre -->
+
+        <div class="text-center mb-20">
+          <span class="uppercase tracking-[5px] text-blue-500 font-semibold">
+            Mes Réalisations
+          </span>
+
+          <h2 class="text-5xl font-bold text-white mt-4">
+            Quelques projets récents
+          </h2>
+
+          <p class="text-slate-400 mt-6 max-w-3xl mx-auto">
+            Voici quelques projets sur lesquels je travaille ou que j'ai
+            réalisés afin de développer mes compétences en développement web et
+            en design.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-10">
+          <!-- Projet -->
+
+          <div
+            class="group relative overflow-hidden rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_10px_35px_rgba(2,8,23,0.25)] hover:border-blue-500 transition duration-500"
+          >
+            <!-- Image -->
+
+            <div class="overflow-hidden">
+              <div class="relative h-72 w-full bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 p-5 group-hover:scale-110 duration-700">
+                <div class="absolute inset-4 rounded-2xl border border-white/10 bg-slate-950/70 p-4">
+                  <div class="flex items-center gap-2 mb-4">
+                    <span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-green-400"></span>
+                  </div>
+                  <div class="grid grid-cols-[1.2fr_0.8fr] gap-3 h-[calc(100%-2rem)]">
+                    <div class="rounded-xl bg-slate-900 p-3">
+                      <div class="h-3 w-24 rounded-full bg-blue-500/70 mb-3"></div>
+                      <div class="h-2 w-full rounded-full bg-slate-700 mb-2"></div>
+                      <div class="h-2 w-5/6 rounded-full bg-slate-700 mb-2"></div>
+                      <div class="h-2 w-3/4 rounded-full bg-slate-700 mb-5"></div>
+                      <div class="grid grid-cols-2 gap-2">
+                        <div class="h-12 rounded-lg bg-blue-600/40"></div>
+                        <div class="h-12 rounded-lg bg-cyan-500/30"></div>
+                      </div>
+                    </div>
+                    <div class="space-y-2">
+                      <div class="h-20 rounded-xl bg-slate-800"></div>
+                      <div class="h-12 rounded-xl bg-slate-800"></div>
+                      <div class="h-12 rounded-xl bg-blue-600/30"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contenu -->
+
+            <div class="p-8">
+              <div class="flex justify-between items-center">
+                <h3 class="text-3xl font-bold text-white">Gestion Scolaire</h3>
+
+                <span class="text-green-400"> ● En cours </span>
+              </div>
+
+              <p class="text-slate-400 mt-5 leading-8">
+                Application web permettant la gestion des élèves, des tuteurs,
+                des inscriptions, des classes, des paiements et d'un tableau de
+                bord.
+              </p>
+
+              <!-- Technologies -->
+
+              <div class="flex flex-wrap gap-3 mt-6">
+                <span
+                  class="px-4 py-2 rounded-full bg-blue-600/20 text-blue-400"
+                >
+                  PHP
+                </span>
+
+                <span
+                  class="px-4 py-2 rounded-full bg-blue-600/20 text-blue-400"
+                >
+                  Laravel
+                </span>
+
+                <span
+                  class="px-4 py-2 rounded-full bg-blue-600/20 text-blue-400"
+                >
+                  Tailwind CSS
+                </span>
+
+                <span
+                  class="px-4 py-2 rounded-full bg-blue-600/20 text-blue-400"
+                >
+                  MySQL
+                </span>
+              </div>
+
+              <!-- Boutons -->
+
+              <div class="flex gap-5 mt-8">
+                <a
+                  href="#"
+                  class="bg-blue-600 px-6 py-3 rounded-full hover:bg-blue-700 duration-300"
+                >
+                  Démo
+                </a>
+
+                <a
+                  href="#"
+                  class="border border-blue-500 px-6 py-3 rounded-full hover:bg-blue-600 duration-300"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 2 -->
+
+          <div
+            class="group relative overflow-hidden rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 hover:border-cyan-400 transition duration-500"
+          >
+            <div class="overflow-hidden">
+              <div class="relative h-72 w-full bg-gradient-to-br from-cyan-950 via-slate-900 to-blue-950 p-5 group-hover:scale-110 duration-700">
+                <div class="absolute inset-4 rounded-2xl border border-white/10 bg-slate-950/70 p-4">
+                  <div class="flex items-center justify-between mb-4">
+                    <div class="h-3 w-24 rounded-full bg-cyan-400"></div>
+                    <div class="h-8 w-20 rounded-full bg-cyan-600/40"></div>
+                  </div>
+                  <div class="grid grid-cols-[1.4fr_0.6fr] gap-3 h-[calc(100%-2rem)]">
+                    <div class="rounded-xl bg-slate-900 p-3">
+                      <div class="grid grid-cols-3 gap-2 mb-3">
+                        <div class="h-12 rounded-lg bg-cyan-500/40"></div>
+                        <div class="h-12 rounded-lg bg-blue-500/40"></div>
+                        <div class="h-12 rounded-lg bg-indigo-500/40"></div>
+                      </div>
+                      <div class="h-20 rounded-xl border border-cyan-500/20 bg-cyan-500/10 p-3">
+                        <div class="h-2 w-20 rounded-full bg-cyan-300 mb-2"></div>
+                        <div class="h-2 w-full rounded-full bg-slate-700 mb-2"></div>
+                        <div class="h-2 w-5/6 rounded-full bg-slate-700"></div>
+                      </div>
+                    </div>
+                    <div class="space-y-2">
+                      <div class="h-16 rounded-xl bg-slate-800"></div>
+                      <div class="h-16 rounded-xl bg-slate-800"></div>
+                      <div class="h-16 rounded-xl bg-cyan-500/20"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-8">
+              <h3 class="text-3xl font-bold text-white">
+                Dashboard Administrateur
+              </h3>
+
+              <p class="text-slate-400 mt-5 leading-8">
+                Tableau de bord moderne présentant des statistiques, des
+                graphiques et la gestion des utilisateurs.
+              </p>
+
+              <div class="flex flex-wrap gap-3 mt-6">
+                <span
+                  class="px-4 py-2 rounded-full bg-cyan-500/20 text-cyan-400"
+                >
+                  PHP
+                </span>
+
+                <span
+                  class="px-4 py-2 rounded-full bg-cyan-500/20 text-cyan-400"
+                >
+                  Tailwind
+                </span>
+
+                <span
+                  class="px-4 py-2 rounded-full bg-cyan-500/20 text-cyan-400"
+                >
+                  Chart.js
+                </span>
+              </div>
+
+              <div class="flex gap-5 mt-8">
+                <a href="#" class="bg-cyan-600 px-6 py-3 rounded-full">
+                  Démo
+                </a>
+
+                <a
+                  href="#"
+                  class="border border-cyan-500 px-6 py-3 rounded-full"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== GRAPHIC DESIGN ====================-->
+
+    <section id="graphics" class="py-20 sm:py-28 bg-slate-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <!-- Titre -->
+
+        <div class="text-center mb-20">
+          <span class="uppercase tracking-[5px] text-blue-500 font-semibold">
+            Mes Créations
+          </span>
+
+          <h2 class="text-5xl font-bold text-white mt-4">Galerie Graphique</h2>
+
+          <p class="text-slate-400 mt-5 max-w-3xl mx-auto">
+            Quelques affiches et visuels réalisés dans le cadre de formations,
+            d'événements et de projets personnels.
+          </p>
+        </div>
+
+        <!-- Galerie -->
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Carte 1 -->
+
+          <div
+            class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-lg"
+          >
+            <div class="h-96 w-full bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 p-5 group-hover:scale-110 duration-700">
+              <div class="h-full rounded-[1.5rem] border border-white/10 bg-slate-950/70 p-5 flex flex-col justify-between">
+                <div class="flex items-center justify-between">
+                  <div class="h-3 w-20 rounded-full bg-blue-500/70"></div>
+                  <div class="h-8 w-8 rounded-full bg-cyan-500/30"></div>
+                </div>
+                <div class="space-y-3">
+                  <div class="h-3 w-32 rounded-full bg-slate-600"></div>
+                  <div class="h-3 w-24 rounded-full bg-slate-700"></div>
+                  <div class="h-24 rounded-2xl border border-blue-500/20 bg-blue-500/10"></div>
+                </div>
+                <div class="flex gap-2">
+                  <div class="h-10 flex-1 rounded-xl bg-slate-800"></div>
+                  <div class="h-10 w-10 rounded-xl bg-cyan-500/20"></div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="absolute inset-0 bg-slate-950/70 opacity-0 group-hover:opacity-100 duration-500 flex flex-col justify-end p-8"
+            >
+              <span class="text-blue-400 text-sm uppercase"> Illustration </span>
+
+              <h3 class="text-2xl font-bold text-white mt-2">Vacances Utiles</h3>
+
+              <p class="text-slate-300 mt-3">UI • Branding • 2026</p>
+            </div>
+          </div>
+
+          <!-- Carte 2 -->
+
+          <div
+            class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-lg"
+          >
+            <div class="h-96 w-full bg-gradient-to-br from-slate-900 via-slate-800 to-purple-900 p-5 group-hover:scale-110 duration-700">
+              <div class="h-full rounded-[1.5rem] border border-white/10 bg-slate-950/70 p-5 flex flex-col justify-center gap-4">
+                <div class="h-3 w-28 rounded-full bg-purple-500/70"></div>
+                <div class="h-16 rounded-2xl bg-purple-500/10 border border-purple-500/20"></div>
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="h-20 rounded-2xl bg-slate-800"></div>
+                  <div class="h-20 rounded-2xl bg-slate-800"></div>
+                </div>
+                <div class="h-3 w-24 rounded-full bg-slate-700"></div>
+              </div>
+            </div>
+
+            <div
+              class="absolute inset-0 bg-slate-950/70 opacity-0 group-hover:opacity-100 duration-500 flex flex-col justify-end p-8"
+            >
+              <span class="text-purple-400 text-sm uppercase"> Illustration </span>
+
+              <h3 class="text-2xl font-bold text-white mt-2">Formation Web</h3>
+
+              <p class="text-slate-300 mt-3">Branding • UI • 2026</p>
+            </div>
+          </div>
+
+          <!-- Carte 3 -->
+
+          <div
+            class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-lg"
+          >
+            <div class="h-96 w-full bg-gradient-to-br from-slate-900 via-slate-800 to-cyan-900 p-5 group-hover:scale-110 duration-700">
+              <div class="h-full rounded-[1.5rem] border border-white/10 bg-slate-950/70 p-5 flex flex-col justify-between">
+                <div class="h-3 w-20 rounded-full bg-cyan-500/70"></div>
+                <div class="grid gap-3">
+                  <div class="h-14 rounded-2xl bg-cyan-500/15 border border-cyan-500/20"></div>
+                  <div class="h-20 rounded-2xl bg-slate-800"></div>
+                </div>
+                <div class="flex items-end justify-between">
+                  <div class="h-3 w-24 rounded-full bg-slate-600"></div>
+                  <div class="h-10 w-16 rounded-xl bg-cyan-500/20"></div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="absolute inset-0 bg-slate-950/70 opacity-0 group-hover:opacity-100 duration-500 flex flex-col justify-end p-8"
+            >
+              <span class="text-cyan-400 text-sm uppercase"> Illustration </span>
+
+              <h3 class="text-2xl font-bold text-white mt-2">Promotion</h3>
+
+              <p class="text-slate-300 mt-3">Design • Marketing • 2026</p>
+            </div>
+          </div>
+
+          <!-- Carte 4 -->
+
+          <div
+            class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-lg"
+          >
+            <div class="h-96 w-full bg-gradient-to-br from-slate-900 via-slate-800 to-amber-900 p-5 group-hover:scale-110 duration-700">
+              <div class="h-full rounded-[1.5rem] border border-white/10 bg-slate-950/70 p-5 flex flex-col justify-between">
+                <div class="flex items-center justify-between">
+                  <div class="h-3 w-20 rounded-full bg-amber-500/70"></div>
+                  <div class="h-8 w-8 rounded-full bg-pink-500/30"></div>
+                </div>
+                <div class="flex-1 flex items-center justify-center">
+                  <div class="w-full max-w-[260px] rounded-[2rem] border border-amber-500/20 bg-gradient-to-br from-amber-500/15 via-slate-900 to-rose-500/10 p-4">
+                    <div class="h-24 rounded-[1.25rem] bg-gradient-to-r from-amber-400/40 to-rose-500/30 mb-3"></div>
+                    <div class="h-3 w-20 rounded-full bg-slate-600 mb-2"></div>
+                    <div class="grid grid-cols-2 gap-3">
+                      <div class="h-16 rounded-2xl bg-slate-800"></div>
+                      <div class="h-16 rounded-2xl border border-amber-500/20 bg-amber-500/10"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <div class="h-10 flex-1 rounded-xl bg-slate-800"></div>
+                  <div class="h-10 w-10 rounded-xl bg-amber-500/20"></div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="absolute inset-0 bg-slate-950/70 opacity-0 group-hover:opacity-100 duration-500 flex flex-col justify-end p-8"
+            >
+              <span class="text-amber-400 text-sm uppercase"> Illustration </span>
+
+              <h3 class="text-2xl font-bold text-white mt-2">Louange</h3>
+
+              <p class="text-slate-300 mt-3">Illustration • Branding • 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SCHOOL MANAGEMENT PROJECT ====================-->
+
+    <section
+      id="school-project"
+      class="py-20 sm:py-28 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <!-- Titre -->
+
+        <div class="text-center mb-20">
+          <span class="uppercase tracking-[5px] text-blue-500 font-semibold">
+            Mon Projet Principal
+          </span>
+
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-4">
+            Système de Gestion d'École
+          </h2>
+
+          <p class="text-slate-400 max-w-3xl mx-auto mt-6 leading-8">
+            Une application web moderne conçue pour faciliter l'administration
+            d'un établissement scolaire grâce à une interface intuitive,
+            sécurisée et responsive.
+          </p>
+        </div>
+
+        <!-- Contenu -->
+
+        <div class="grid lg:grid-cols-2 gap-14 items-center">
+          <!-- Image -->
+
+          <div class="relative">
+            <div
+              class="absolute inset-0 bg-blue-600 blur-[120px] opacity-20 rounded-full"
+            ></div>
+
+            <div class="relative w-full rounded-3xl border border-white/10 shadow-2xl overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-blue-950 p-4">
+              <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(59,130,246,0.25),_transparent_40%)]"></div>
+              <div class="relative rounded-2xl border border-white/10 bg-slate-950/80 p-4">
+                <div class="flex items-center gap-2 mb-4">
+                  <span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-green-400"></span>
+                </div>
+
+                <div class="grid gap-3 md:grid-cols-[1.2fr_0.8fr]">
+                  <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-4">
+                    <div class="h-3 w-24 rounded-full bg-blue-500/70 mb-3"></div>
+                    <div class="grid grid-cols-2 gap-3 mb-3">
+                      <div class="h-16 rounded-xl bg-blue-600/30"></div>
+                      <div class="h-16 rounded-xl bg-cyan-500/20"></div>
+                    </div>
+                    <div class="h-20 rounded-xl border border-cyan-500/20 bg-cyan-500/10 p-3">
+                      <div class="h-2 w-20 rounded-full bg-cyan-300 mb-2"></div>
+                      <div class="h-2 w-full rounded-full bg-slate-700 mb-2"></div>
+                      <div class="h-2 w-5/6 rounded-full bg-slate-700"></div>
+                    </div>
+                  </div>
+
+                  <div class="space-y-3">
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-3">
+                      <div class="h-2 w-16 rounded-full bg-slate-600 mb-2"></div>
+                      <div class="h-10 rounded-lg bg-slate-800"></div>
+                    </div>
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-3">
+                      <div class="h-2 w-20 rounded-full bg-slate-600 mb-2"></div>
+                      <div class="h-10 rounded-lg bg-blue-600/25"></div>
+                    </div>
+                    <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-3">
+                      <div class="h-2 w-24 rounded-full bg-slate-600 mb-2"></div>
+                      <div class="h-10 rounded-lg bg-cyan-500/20"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Informations -->
+
+          <div>
+            <span
+              class="inline-flex items-center gap-2 bg-green-500/10 text-green-400 px-5 py-2 rounded-full border border-green-500/20"
+            >
+              <span
+                class="w-2 h-2 rounded-full bg-green-400 animate-pulse"
+              ></span>
+
+              Projet en développement
+            </span>
+
+            <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mt-6">
+              Une plateforme complète pour les établissements scolaires
+            </h3>
+
+            <p class="text-slate-400 leading-8 mt-6">
+              Ce projet est développé afin d'automatiser la gestion quotidienne
+              d'une école en centralisant toutes les informations dans une seule
+              application moderne.
+            </p>
+
+            <!-- Technologies -->
+
+            <div class="flex flex-wrap gap-3 mt-8">
+              <span class="px-4 py-2 rounded-full bg-blue-500/20 text-blue-400"
+                >PHP</span
+              >
+
+              <span class="px-4 py-2 rounded-full bg-red-500/20 text-red-400"
+                >Laravel</span
+              >
+
+              <span class="px-4 py-2 rounded-full bg-cyan-500/20 text-cyan-400"
+                >Tailwind CSS</span
+              >
+
+              <span
+                class="px-4 py-2 rounded-full bg-orange-500/20 text-orange-400"
+                >MySQL</span
+              >
+
+              <span
+                class="px-4 py-2 rounded-full bg-yellow-500/20 text-yellow-400"
+                >JavaScript</span
+              >
+            </div>
+
+            <!-- Progression -->
+
+            <div class="mt-10">
+              <div class="flex justify-between mb-2">
+                <span class="text-white font-semibold">
+                  Progression du projet
+                </span>
+
+                <span class="text-blue-400 font-semibold"> 70 % </span>
+              </div>
+
+              <div class="w-full h-3 bg-slate-800 rounded-full overflow-hidden">
+                <div
+                  class="w-[70%] h-full bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fonctionnalités -->
+
+        <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6 mt-20">
+          <div
+            class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 hover:-translate-y-2 hover:border-blue-500 transition"
+          >
+            <div class="text-5xl mb-5">👨‍🎓</div>
+
+            <h4 class="text-white text-xl font-semibold mb-3">Élèves</h4>
+
+            <p class="text-slate-400">
+              Gestion complète des élèves et de leurs informations.
+            </p>
+          </div>
+
+          <div
+            class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 hover:-translate-y-2 hover:border-blue-500 transition"
+          >
+            <div class="text-5xl mb-5">👨‍👩‍👧</div>
+
+            <h4 class="text-white text-xl font-semibold mb-3">Tuteurs</h4>
+
+            <p class="text-slate-400">
+              Gestion des parents et responsables des élèves.
+            </p>
+          </div>
+
+          <div
+            class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 hover:-translate-y-2 hover:border-blue-500 transition"
+          >
+            <div class="text-5xl mb-5">🏫</div>
+
+            <h4 class="text-white text-xl font-semibold mb-3">Classes</h4>
+
+            <p class="text-slate-400">
+              Organisation des classes, niveaux et affectations.
+            </p>
+          </div>
+
+          <div
+            class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 hover:-translate-y-2 hover:border-blue-500 transition"
+          >
+            <div class="text-5xl mb-5">📊</div>
+
+            <h4 class="text-white text-xl font-semibold mb-3">
+              Tableau de bord
+            </h4>
+
+            <p class="text-slate-400">
+              Statistiques, indicateurs et suivi des activités.
+            </p>
+          </div>
+
+          <div
+            class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 hover:-translate-y-2 hover:border-blue-500 transition"
+          >
+            <div class="text-5xl mb-5">💰</div>
+
+            <h4 class="text-white text-xl font-semibold mb-3">Paiements</h4>
+
+            <p class="text-slate-400">
+              Suivi des frais scolaires et historique des règlements.
+            </p>
+          </div>
+
+          <div
+            class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 hover:-translate-y-2 hover:border-blue-500 transition"
+          >
+            <div class="text-5xl mb-5">👨‍🏫</div>
+
+            <h4 class="text-white text-xl font-semibold mb-3">Enseignants</h4>
+
+            <p class="text-slate-400">
+              Gestion des enseignants et de leurs affectations.
+            </p>
+          </div>
+
+          <div
+            class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 hover:-translate-y-2 hover:border-blue-500 transition"
+          >
+            <div class="text-5xl mb-5">📝</div>
+
+            <h4 class="text-white text-xl font-semibold mb-3">Inscriptions</h4>
+
+            <p class="text-slate-400">
+              Gestion des nouvelles inscriptions et réinscriptions.
+            </p>
+          </div>
+
+          <div
+            class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-6 hover:-translate-y-2 hover:border-blue-500 transition"
+          >
+            <div class="text-5xl mb-5">📄</div>
+
+            <h4 class="text-white text-xl font-semibold mb-3">Rapports</h4>
+
+            <p class="text-slate-400">
+              Génération de statistiques, reçus et rapports PDF.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- contact -->
+
+      <!--==================== CONTACT ====================-->
+
+      <section id="contact" class="py-20 sm:py-28 bg-slate-900 relative overflow-hidden">
+        <!-- Lumières d'arrière-plan -->
+
+        <div
+          class="absolute -top-32 -left-32 w-96 h-96 bg-blue-600 rounded-full blur-[140px] opacity-20"
+        ></div>
+
+        <div
+          class="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500 rounded-full blur-[140px] opacity-20"
+        ></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+          <!-- Titre -->
+
+          <div class="text-center mb-20">
+            <span class="uppercase tracking-[5px] text-blue-500 font-semibold">
+              Contact
+            </span>
+
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-4">
+              Travaillons Ensemble
+            </h2>
+
+            <p class="text-slate-400 mt-6 max-w-2xl mx-auto">
+              Vous avez un projet web, une idée ou besoin d'un support graphique
+              ? N'hésitez pas à me contacter.
+            </p>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-10">
+            <!-- Informations -->
+
+            <div
+              class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-10"
+            >
+              <h3 class="text-3xl font-bold text-white mb-10">
+                Mes coordonnées
+              </h3>
+
+              <div class="space-y-8">
+                <div class="flex items-center gap-5">
+                  <div
+                    class="w-14 h-14 rounded-xl bg-blue-600 flex items-center justify-center"
+                  >
+                    <i class="fas fa-envelope text-white"></i>
+                  </div>
+
+                  <div>
+                    <h4 class="text-white font-semibold">Email</h4>
+
+                    <p class="text-slate-400">contact@keric.dev</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-5">
+                  <div
+                    class="w-14 h-14 rounded-xl bg-green-600 flex items-center justify-center"
+                  >
+                    <i class="fab fa-whatsapp text-white"></i>
+                  </div>
+
+                  <div>
+                    <h4 class="text-white font-semibold">WhatsApp</h4>
+
+                    <p class="text-slate-400">+228 90 12 72 70</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-5">
+                  <div
+                    class="w-14 h-14 rounded-xl bg-sky-600 flex items-center justify-center"
+                  >
+                    <i class="fab fa-linkedin-in text-white"></i>
+                  </div>
+
+                  <div>
+                    <h4 class="text-white font-semibold">LinkedIn</h4>
+
+                    <p class="text-slate-400">linkedin.com/in/keric</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-5">
+                  <div
+                    class="w-14 h-14 rounded-xl bg-gray-700 flex items-center justify-center"
+                  >
+                    <i class="fab fa-github text-white"></i>
+                  </div>
+
+                  <div>
+                    <h4 class="text-white font-semibold">GitHub</h4>
+
+                    <p class="text-slate-400">github.com/keric</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Formulaire -->
+
+            <div
+              class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-10"
+            >
+              <form class="space-y-6">
+                <div>
+                  <label class="text-white"> Nom complet </label>
+
+                  <input
+                    type="text"
+                    class="mt-2 w-full rounded-xl bg-slate-800 border border-slate-700 focus:border-blue-500 focus:ring-0 text-white p-4"
+                  />
+                </div>
+
+                <div>
+                  <label class="text-white"> Adresse Email </label>
+
+                  <input
+                    type="email"
+                    class="mt-2 w-full rounded-xl bg-slate-800 border border-slate-700 focus:border-blue-500 focus:ring-0 text-white p-4"
+                  />
+                </div>
+
+                <div>
+                  <label class="text-white"> Sujet </label>
+
+                  <input
+                    type="text"
+                    class="mt-2 w-full rounded-xl bg-slate-800 border border-slate-700 focus:border-blue-500 focus:ring-0 text-white p-4"
+                  />
+                </div>
+
+                <div>
+                  <label class="text-white"> Message </label>
+
+                  <textarea
+                    rows="6"
+                    class="mt-2 w-full rounded-xl bg-slate-800 border border-slate-700 focus:border-blue-500 focus:ring-0 text-white p-4 resize-none"
+                  ></textarea>
+                </div>
+
+                <button
+                  class="w-full bg-gradient-to-r from-blue-600 to-cyan-500 rounded-xl py-4 font-semibold text-white hover:scale-[1.02] transition"
+                >
+                  Envoyer le message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!--==================== FOOTER ====================-->
+
+    <footer
+      class="relative bg-slate-950 border-t border-white/10 overflow-hidden"
+    >
+      <!-- Effets lumineux -->
+
+      <div
+        class="absolute top-0 left-0 w-72 h-72 bg-blue-600 rounded-full blur-[150px] opacity-10"
+      ></div>
+      <div
+        class="absolute bottom-0 right-0 w-72 h-72 bg-cyan-500 rounded-full blur-[150px] opacity-10"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-20 relative z-10">
+        <div class="grid lg:grid-cols-4 gap-12">
+          <!-- Logo -->
+
+          <div>
+            <h2 class="text-4xl font-bold text-white">
+              Keric<span class="text-blue-500">.</span>
+            </h2>
+
+            <p class="text-slate-400 mt-6 leading-8">
+              Développeur Web & Graphiste passionné par la création
+              d'applications web modernes, sécurisées et de supports graphiques
+              professionnels.
+            </p>
+          </div>
+
+          <!-- Navigation -->
+
+          <div>
+            <h3 class="text-xl font-semibold text-white mb-6">Navigation</h3>
+
+            <ul class="space-y-3 text-slate-400">
+              <li>
+                <a href="#home" class="hover:text-blue-400 transition">
+                  Accueil
+                </a>
+              </li>
+
+              <li>
+                <a href="#about" class="hover:text-blue-400 transition">
+                  À propos
+                </a>
+              </li>
+
+              <li>
+                <a href="#skills" class="hover:text-blue-400 transition">
+                  Compétences
+                </a>
+              </li>
+
+              <li>
+                <a href="#projects" class="hover:text-blue-400 transition">
+                  Projets
+                </a>
+              </li>
+
+              <li>
+                <a href="#contact" class="hover:text-blue-400 transition">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Technologies -->
+
+          <div>
+            <h3 class="text-xl font-semibold text-white mb-6">Technologies</h3>
+
+            <div class="flex flex-wrap gap-3">
+              <span
+                class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-slate-300"
+              >
+                HTML5
+              </span>
+
+              <span
+                class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-slate-300"
+              >
+                Tailwind CSS
+              </span>
+
+              <span
+                class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-slate-300"
+              >
+                JavaScript
+              </span>
+
+              <span
+                class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-slate-300"
+              >
+                PHP
+              </span>
+
+              <span
+                class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-slate-300"
+              >
+                Laravel
+              </span>
+
+              <span
+                class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-slate-300"
+              >
+                MySQL
+              </span>
+            </div>
+          </div>
+
+          <!-- Réseaux sociaux -->
+
+          <div>
+            <h3 class="text-xl font-semibold text-white mb-6">
+              Restons connectés
+            </h3>
+
+            <div class="flex gap-4">
+              <a
+                href="#"
+                class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-blue-600 hover:border-blue-600 transition"
+              >
+                <i class="fab fa-github text-white"></i>
+              </a>
+
+              <a
+                href="#"
+                class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-sky-600 hover:border-sky-600 transition"
+              >
+                <i class="fab fa-linkedin-in text-white"></i>
+              </a>
+
+              <a
+                href="#"
+                class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-green-600 hover:border-green-600 transition"
+              >
+                <i class="fab fa-whatsapp text-white"></i>
+              </a>
+
+              <a
+                href="#"
+                class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-blue-500 hover:border-blue-500 transition"
+              >
+                <i class="fab fa-facebook-f text-white"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ligne -->
+
+        <div
+          class="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-slate-500 text-center">
+            © 2026 Keric. Tous droits réservés.
+          </p>
+
+          <a
+            href="#home"
+            class="mt-6 md:mt-0 w-12 h-12 rounded-full bg-blue-600 hover:bg-blue-700 flex items-center justify-center transition"
+          >
+            <i class="fas fa-arrow-up text-white"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const closeMenu = document.getElementById('close-menu');
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+      if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener('click', () => {
+          mobileMenu.classList.remove('translate-x-full');
+          mobileMenu.classList.add('translate-x-0');
+        });
+      }
+
+      if (closeMenu && mobileMenu) {
+        closeMenu.addEventListener('click', () => {
+          mobileMenu.classList.remove('translate-x-0');
+          mobileMenu.classList.add('translate-x-full');
+        });
+      }
+
+      mobileNavLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('translate-x-0');
+          mobileMenu.classList.add('translate-x-full');
+        });
+      });
+    </script>
+  </body>
+</html>

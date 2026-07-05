@@ -1,0 +1,29 @@
+html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 90px;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .gradient {
+        background: linear-gradient(135deg, #2563eb, #1d4ed8, #0f172a);
+      }
+
+      .hero-bg {
+        background-image:
+          radial-gradient(circle at top left, #2563eb33, transparent 40%),
+          radial-gradient(circle at bottom right, #0ea5e933, transparent 35%);
+      }
+
+      .social-link {
+        transition: transform 0.2s ease, color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+      }
+
+      .social-link:hover {
+        transform: translateY(-2px);
+        background-color: rgba(59, 130, 246, 0.12);
+        border-color: #3b82f6;
+        color: #60a5fa;
+      }
